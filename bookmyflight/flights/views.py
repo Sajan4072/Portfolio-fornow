@@ -9,13 +9,7 @@ from .forms import CreateUserForms,PassengerForm
 
 # Create your views here.
 def log(request):
-    if not request.user.is_authenticated:
-        return render(request,"flights/login1.html",{"message":None})
-    
-    context={
-        "user":request.user
-    }
-    return render(request,"flights/landing.html",context) 
+    return render(request,"flights/landing.html") 
 
 def login_view(request):
     username=request.POST["username"]
