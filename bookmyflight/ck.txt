@@ -1,0 +1,23 @@
+1.. semi transparent Backgorund colour 
+
+
+Add a semi-transparent background color to the <p> element to make the text stand out more. For example:
+css
+Copy code
+<p class="lead-3" style="background-color: rgba(0, 0, 0, 0.5);">Greetings, every
+
+
+
+
+
+2....
+
+
+3...
+
+
+4...
+
+
+5...
+
