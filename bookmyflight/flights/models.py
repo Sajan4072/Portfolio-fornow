@@ -27,3 +27,10 @@ class Passenger(models.Model):
     def __str__(self):
         return f"{self.first} {self.last}"
 
+class Message(models.Model):
+    name=models.CharField(max_length=200)
+    email=models.EmailField(max_length=200)
+    message=models.TextField()
+
+    def __str__(self):
+        return f"{self.name},{self.email},{self.message}"

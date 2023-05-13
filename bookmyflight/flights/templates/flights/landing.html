@@ -37,11 +37,11 @@
 
             <section class="navbar-mobile">
                 <nav class="nav nav-navbar ml-auto">
-                    <a class="nav-link" href="{% url 'about' %}">About Me</a>
+                    <a class="nav-link" href="#">About Me</a>
                 
-                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                    <a class="nav-link" href="#">Contact</a>
                     <a class="nav-link" href="#">Resume</a>
-                    <a class="nav-link" href="{% url 'logout' %}">Blogs</a>
+                    <a class="nav-link" href="#">Blogs</a>
                 </nav>
             </section>
 
@@ -287,25 +287,28 @@
       | Signup
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-        <div class="container">
+        <div class="container" style="margin-bottom: 60px;">
 
-          <h3 class="text-center fw-200"><strong>Join</strong> thousands of companies that use TheSaaS</h3>
+          <h3 class="text-center fw-200"><strong>Get in Touch </strong><br>I am open to taking on freelance work, provided the project is a good fit for me.
+          </h3>
 
-          <form class="row gap-y mt-7">
-            <div class="col-md-6 col-lg-3">
-              <input type="text" class="form-control" placeholder="Name">
+          <form class="row gap-y mt-7" action="{% url 'save_message' %}" method="POST">
+            {% csrf_token %}
+            <div class="col-md-6 col-lg-2">
+              <input type="text" class="form-control" placeholder="Name" name="name">
             </div>
 
             <div class="col-md-6 col-lg-3">
-              <input type="text" class="form-control" placeholder="Email">
+              <input type="email" class="form-control" placeholder="Email" name="email">
             </div>
 
-            <div class="col-md-6 col-lg-3">
-              <input type="password" class="form-control" placeholder="Password">
+            <div class="col-md-9 col-lg-4">
+              <!-- <input type="text" class="form-control" placeholder="Message" name=message> -->
+              <textarea class="form-control" name="message" rows="4" placeholder="Message"></textarea>
             </div>
 
-            <div class="col-md-6 col-lg-3">
-              <button class="btn btn-block btn-success h-100">Get Started</button>
+            <div class="col-md-6 col-lg-3" style="height:76px;">
+              <button class="btn btn-block btn-success h-100">SEND MESSAGE</button>
             </div>
           </form>
 
@@ -319,7 +322,7 @@
       | Partner
       |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
       !-->
-        <section class="section bg-gray">
+        <!-- <section class="section bg-gray">
             <div class="container">
                 <div data-provide="slider" data-autoplay="true" data-slides-to-show="4">
                     <div><img src="{% static 'img/p1.PNG' %}" alt="partner 1"></div>
@@ -331,7 +334,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
     </main>
 
