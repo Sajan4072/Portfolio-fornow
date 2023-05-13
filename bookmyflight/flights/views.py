@@ -13,7 +13,7 @@ def save_message(request):
         name = request.POST['name']
         email = request.POST['email']
         message = request.POST['message']
-        print(name)
+   
         message = Message(name = name,email = email,message = message)
         message.save()
         return redirect(reverse('land'))
