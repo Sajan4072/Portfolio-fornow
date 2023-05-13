@@ -8,9 +8,36 @@ Copy code
 
 
 2....
+how to put social media icons as a link
+
+front this directory fonts vanne folder rakhne and copy everything inside it 
+
+and just type like this 
+
+
+ <div class="container">
+            <div class="row gap-y">
+
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="opacity-70">&copy; {% now "Y" %} Sajan Rai. All rights reserved.</p>
+                </div>
+
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="social">
+                        <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="social-github" href="#"><i class="fa fa-github"></i></a>
+                        <a class="social-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 
 3...
+
+
 
 
 4...
