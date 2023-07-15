@@ -89,6 +89,8 @@ The background-size: cover; property ensures that the background image covers th
 
 
 8...
+Opening hrefs in new tab
+<a class="nav-link" href="https://medium.com/@rai4072" target="_blank">Blogs</a>
 
 
 
