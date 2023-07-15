@@ -95,3 +95,47 @@ Opening hrefs in new tab
 
 
 9...
+to increase icons of social size
+
+To make the icon larger, you can use CSS to adjust the size of the <i> element. Here's an example of how you can make the icon bigger:
+
+html
+Copy code
+<a class="social-github" href="https://github.com/Sajan4072" target="_blank">
+  <i class="fa fa-github fa-2x"></i>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10....
+
+
+11...
+
+
+12...
+
+
+13..
+
+14..
+
+15...
+
+
+16...
+
+
